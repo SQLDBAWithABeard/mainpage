@@ -1,8 +1,8 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: Rob Sewell Data Platform MVP and Cloud Data Center Management MVP
-description: The main page for Rob Sewell
+title: Rob Sewell 
+description: Data Platform MVP and Cloud Data Center Management MVP
 keywords: Rob Sewell, SQLDbaWithABeard, SQL DBA With A Beard, PowerShell, Azure, Automation, DevOps, Data
 baseurl:  / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: https://sqldbawithabeard.github.io/  # url should be 'http://<github_username>.github.io/homepage' as before
@@ -15,7 +15,7 @@ author:  # change following line to your infomation.
   first_name: Rob  # Be used at index page about me section.
   last_name: Sewell  # Be used at index page about me section.
   avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
-  github_username: SQLDbaWithBeard  # Leave blank if you don't have now
+  github_username: SQLDbaWithABeard  # Leave blank if you don't have now
   linkedin_id: robsewellsqldba # Leave blank if you don't have now
   facebook_username:   # Leave blank if you don't have now
   twitter_username: sqldbawithbeard  # Leave blank if you don't have now
@@ -28,11 +28,11 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-linux
     - name: icon-apache
-  desc: "Rob is a SQL Server DBA, Data Automation and PowerShell Engineer.
+  desc: "<p>Rob is a SQL Server DBA, Data Automation and PowerShell Engineer.</p>
 
-Rob is a Data Platform MVP and a Microsoft Cloud and Datacenter MVP. [link](https://mvp.microsoft.com/en-us/PublicProfile/5002693)
+<p>Rob is a Data Platform MVP and a Microsoft Cloud and Datacenter MVP. <a href=\"https://mvp.microsoft.com/en-us/PublicProfile/5002693\">Link</a>
 
-Rob works with clients to enable automation, SQL Server best practices and Continuous Delivery using PowerShell, Git, Azure DevOps, Jenkins, Octopus Deploy mainly on the Microsoft Azure platform or on-premises. Rob also enables automation of SQL Server database tasks. He also provides customised training in one-on-one or group sessions either online or at your premises by the hour or by the day. " # Describe yourself.
+<p>Rob works with clients to enable automation, SQL Server best practices and Continuous Delivery using PowerShell, Git, Azure DevOps, Jenkins, Octopus Deploy mainly on the Microsoft Azure platform or on-premises. Rob also enables automation of SQL Server database tasks. He also provides customised training in one-on-one or group sessions either online or at your premises by the hour or by the day. </p>"
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
