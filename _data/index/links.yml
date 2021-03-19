@@ -1,18 +1,13 @@
 # links section data
-- last_name: Name 1
-  first_name:
-  desc: CEO
-  website: https://www.google.com
-  email: ceo@google.com
+- last_name: Sewell
+  first_name: Rob
+  desc: Consultant
+  website: https://www.robsewell.com
+  email: rob@sewells-consulting.co.uk
 
-- last_name: Donate
-  first_name: Jalpc
-  desc: Support Jalpc
-  website: http://www.jarrekk.com/donate/
-  email: me@jarrekk.com
+- last_name: Sponsors
+  first_name: GitHub
+  desc: Support Rob via GitHub sponsors
+  website: https://github.com/sponsors/sqldbawithabeard
+  email: 
 
-- last_name: LN
-  first_name: FN
-  desc: COO
-  website: https://github.com
-  email: coo@google.com
