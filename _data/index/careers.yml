@@ -1,30 +1,90 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Company A
+    detail: Sewells Consulting Limited
     i18n: company_a
   desc:
-    detail: I worked at Company A ...
+    detail: "Director of own company providing SQL DBA, Training and PowerShell Automation services to public and private sector clients of all sizes.
+
+Large project to automate the creation and refresh of SQL Server environments with PowerShell using Virtual Machine Manager for an Airline and Holiday Firm
+
+Provided Project SQL DBA, PowerShell, training and mentoring services to public sector client including migration of cloud hosted web services, PowerShell Desired State Configuration of UAT and Live environments and Azure Automation. Delivered PoC SQL on Linux solution. Installed and configured Sentry One tools for monitoring
+
+Automated the install and monitoring of Ola Hallengrens Maintenance Solution across large estate as part of a project to use a new backup solution.
+
+Designed, delivered and documented solution to keep SQL updates up to date using SCCM and PowerShell
+
+Provided custom PowerShell training for small teams and individuals
+
+Health check of SQL Server Estate, Remote DBA support, advice on rationalisation and assistance with recruitment for mid sized private sector legal services client
+
+General IT and SQL DBA PowerShell cloud support for small companies
+
+Project SQL DBA, PowerShell, Azure services and incident response  for specialist international body"
     i18n: company_a_desc
   date:
-    detail: Apr. 2016
+    detail: Nov. 2015
     i18n: company_a_date
   job:
-    detail: CTO
+    detail: Owner, Consultant, Beard Twizzler
     i18n: company_a_job
   icon: fa-plus-square
   present: true
 
 - name:
-    detail: Company B
+    detail: Teleperformance
     i18n: company_b
   desc:
-    detail: I worked at Company B ...
+    detail: "Senior SQL Server DBA responsible for a large, geographically diverse, corporate estate comprising of SQL Server 2000 to SQL 2014 including PCI compliant environments. Team Lead for team of 3 DBAs and 2 Data Warehouse technicians. Responsible for the organisations SQL infrastructure, security, performance, availability, redundancy, disaster recovery, and specific application requirements.
+
+Developed and implemented automated solution for the installation of standard DBA scripts including
+
+Customised Ola Hallengren maintenance solution ensuring best practice integrity, index maintenance and backups solution
+Scripts from Brent Ozar and Adam Mechanic for trouble shooting,
+Alerts for severe errors
+Extended event sessions
+Developed and implemented automated solution using PowerShell, Power Bi and TSQL to provide quick and simple self-service reporting for database information for all teams including Agent Job results, Client database location and security policy reporting
+Instigated and took part in in-house hackathon to demonstrate security improvements
+Introduced TFS to the DBA team to enable source control of databases and DBA scripts
+Automated installation of SQL instances to required company standards
+Instrumental member of team to instigate Continuous Delivery and Agile Development to project teams
+Ensured resolution of all incidents and request within SLA by the DBA team improving performance to 100%
+Assisted with the design and implementation of a corporate data warehouse solution
+Implemented, maintained and provided reporting for security and resilience to comply with required corporate policies
+Lead member of project team to upgrade systems from SQL 2000, 2005, Windows 2003 to SQL 2014, Windows Server 2012R2 including availability groups for HA/DR and TDE for security of data at rest and rationalisation of the number of instances"
     i18n: company_b_desc
   date:
     detail: Jun. 2015
     i18n: company_b_date
   job:
-    detail: Full Stack Developer
+    detail: Senior SQL Server DBA
+    i18n: company_b_job
+  icon: fa-plus-square
+
+- name:
+    detail: Government
+    i18n: company_b
+  desc:
+    detail: "Supporting a large environment of SQL, Ingres and Oracle Databases for the creation, verification and deployment of maritime charts, ensuring availability and improving performance. The estate consists of SQL 2000, 2005, 2008 R2 and 2012 instances, Oracle 10g and 11g and Ingres versions 6 and 9.2 running on Windows server 2000,2003 and 2008 R2 and UNIX
+
+Developed, improved and automated routine administration tasks, alerting, maintenance, capacity planning and performance tuning of SQL Server instances using custom written Powershell scripts, Policy Based Management,System Center, Operations Manager, Red Gates SQL Monitor
+
+Improved teams productivity by developing and maintaining a series of Powershell scripts to automate as many routine tasks as possible
+
+Influential in introducing Powershell into IT administration not only in the DBA team but also providing frequent training, support, feedback, code reviews and documentation for all 3rd line teams
+
+Implemented and maintained security and resilience in accordance with Microsoft best practices and MoD requirements and ensure documentation is kept up to date.
+
+Provide 3rd line technical support, investigation, diagnosis of incidents and resolution within agreed SLAs and provide 24/7 365 on-call support for critical systems.
+
+Active member of project teams to deliver new solutions and upgrades to existing solutions. Worked with other technical teams to enable them to work towards Agile delivery providing solutions to custom environment specific issues
+
+Central critical resource for Azure IaaS project including Powershell scripting to install entire environment and provide DR as well as implementing SQL mirroring. Provided input from design to delivery to supportability, writing custom Powershell scripts for creation of support environment, for monitoring servers and systems, using Azure Automation to improve 1st line fixes and to reduce complexity of update routines"
+    i18n: company_b_desc
+  date:
+    detail: Oct. 2011
+    i18n: company_b_date
+  job:
+    detail: SQL Server DBA
     i18n: company_b_job
   icon: fa-plus-square
