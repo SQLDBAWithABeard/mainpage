@@ -1,22 +1,41 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Jalpc
+- name: Presentations
   i18n: jalpc
-  gh_user: jarrekk
-  repo: Jalpc
-  img: /static/assets/img/landing/jekyll.png
-  desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
+  gh_user: SQLDbaWithABeard
+  repo: Presentations
+  img: /static/assets/img/landing/rob.jpg
+  desc: Holds all of the presentations that I have given - Please feel free to use the slides and code as you see fit. All I ask is that you let me know and that you have a small attribution to me
 
-- name: Python
-  i18n: cpython
-  gh_user: python
-  repo: cpython
-  img: /static/assets/img/landing/python.png
-  desc: This project is other's project. I use another request to get repo's information.
+- name: Jupyter Notebooks
+  i18n: jalpc
+  gh_user: SQLDbaWithABeard
+  repo: JupyterNotebooks
+  img: /static/assets/img/landing/rob.jpg
+  desc: "Here you can find .NET interactive and none .NET Jupyter notebooks. They are all .NET PowerShell, PowerShell or SQL language notebooks introducing dbatools and dbachecks or performing administration tasks. Please feel free to use as you see fit. All I ask is that you let me know and that you have a small attribution to me"
 
-- name: Google
-  i18n: google
-  url: https://google.com
-  img: /static/assets/img/landing/google.png
-  desc: This is another project.
+- name: Data Saturdays
+  i18n: jalpc
+  gh_user: SQLCollaborative
+  repo: DataSaturdays
+  img: /static/assets/img/landing/rob.jpg
+  desc: "A Data Saturday is an event that provides (usually free) training and information sessions about Azure Data and SQL Server. At present they are hosted online.
+
+The Data Saturdays resource is an open-source repository (this one) which enables event organisers to easily build a web presence as an entry point into their event. It integrates with other free event management solutions such as Sessionize enabling Call For Speakers, easily integrating the schedule, room links and speaker walls. The website is https://datasaturdays.com"
+
+- name: dbatools
+  i18n: jalpc
+  gh_user: SQLCollaborative
+  repo: dbatools
+  img: /static/assets/img/landing/sqlcollab.png
+  desc: "🚀 SQL Server automation and instance migrations have never been safer, faster or freer - https://dbatools.io"
+
+- name: dbachecks
+  i18n: jalpc
+  gh_user: SQLCollaborative
+  repo: dbachecks
+  img: /static/assets/img/landing/sqlcollab.png
+  desc: "🚀 SQL Server automation and instance migrations have never been safer, faster or freer - https://dbatools.io"
+
+
