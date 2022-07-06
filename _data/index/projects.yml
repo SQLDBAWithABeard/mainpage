@@ -1,6 +1,14 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+
+- name: dbachecks 
+  i18n: jalpc
+  gh_user: SQLCollaborative
+  repo: dbachecks
+  img: /static/assets/img/landing/sqlcollab.png
+  desc: "🚀 SQL Server automation and instance migrations have never been safer, faster or freer - https://dbatools.io"
+
 - name: Presentations
   i18n: jalpc
   gh_user: SQLDbaWithABeard
@@ -30,12 +38,4 @@ The Data Saturdays resource is an open-source repository (this one) which enable
   repo: dbatools
   img: /static/assets/img/landing/sqlcollab.png
   desc: "🚀 SQL Server automation and instance migrations have never been safer, faster or freer - https://dbatools.io"
-
-- name: dbachecks
-  i18n: jalpc
-  gh_user: SQLCollaborative
-  repo: dbachecks
-  img: /static/assets/img/landing/sqlcollab.png
-  desc: "🚀 SQL Server automation and instance migrations have never been safer, faster or freer - https://dbatools.io"
-
 
