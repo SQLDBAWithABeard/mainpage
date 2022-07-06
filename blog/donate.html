@@ -3,8 +3,8 @@ layout: blog
 title: Donate
 permalink: /donate/
 ---
-    <link href="{{ "/static/slick/slick.css" | prepend: site.baseurl }}" rel="stylesheet">
-    <link href="{{ "/static/slick/slick-theme.css" | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ "/static/slick/slick.css" }}" rel="stylesheet">
+    <link href="{{ "/static/slick/slick-theme.css" }}" rel="stylesheet">
 <div class="row">
     <div class="col-sm-8 col-sm-offset-2 text-center">
         <div class="navy-line"></div>
@@ -50,7 +50,7 @@ permalink: /donate/
             <div class="contact-box" style="height: 200px;">
                 <div class="col-sm-4">
                     <div class="text-center">
-                        <img alt="image" class="img-circle m-t-xs img-responsive {{ donation.github }}" src="{{ "/static/assets/img/default.jpg" | prepend: site.baseurl }}">
+                        <img alt="image" class="img-circle m-t-xs img-responsive {{ donation.github }}" src="{{ "/static/assets/img/default.jpg" }}">
                         <div class="m-t-xs font-bold">{{ donation.name }}</div>
                         <p><i class="fa fa-{{ donation.type }}"></i> {{ donation.value }}</p>
                     </div>
@@ -74,7 +74,7 @@ permalink: /donate/
 </div>
 
 <!-- slick carousel-->
-<script src="{{ "/static/slick/slick.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/static/slick/slick.min.js" }}"></script>
 
 <style>
     .slick .ibox-content {
