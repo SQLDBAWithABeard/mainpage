@@ -33,12 +33,12 @@
 
 - id: calendly
   i18n: nav.calendly
-  name: Calendly
+  name: Meet
   tpl: calendly.html
   css: contact
 
 - id: contact
   i18n: nav.link
-  name: Contact
+  name: Links
   tpl: links.html
   css: contact
