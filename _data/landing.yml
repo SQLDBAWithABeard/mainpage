@@ -31,6 +31,12 @@
   page: https://blog.robsewell.com
   css: testimonials navy-section
 
+- id: calendly
+  i18n: nav.calendly
+  name: Calendly
+  tpl: calendly.html
+  css: contact
+
 - id: contact
   i18n: nav.link
   name: Contact
