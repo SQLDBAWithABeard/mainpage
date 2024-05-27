@@ -31,7 +31,7 @@
   page: https://blog.robsewell.com
   css: testimonials navy-section
 
-- id: links
+- id: contact
   i18n: nav.link
   name: Links
   tpl: links.html

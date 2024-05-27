@@ -29,9 +29,9 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-linux
     - name: icon-apache
-  desc: "<p>Rob is a SQL Server DBA, Data Automation and PowerShell Engineer.</p>
+  desc: "<p>Rob is a Data Infrastructure as Code Automation Engineer and Trainer.</p>
 
-<p>Rob is a Data Platform MVP and a Microsoft Cloud and Datacenter MVP. <a href=\"https://mvp.microsoft.com/en-us/PublicProfile/5002693\">Link</a>
+<p>Rob is a Data Platform MVP and an Azure MVP. <a href=\"https://mvp.microsoft.com/en-us/PublicProfile/5002693\">Link</a>
 
 <p>Rob works with clients to enable automation, SQL Server best practices and Continuous Delivery using PowerShell, Git, Azure DevOps, Jenkins, Octopus Deploy mainly on the Microsoft Azure platform or on-premises. Rob also enables automation of SQL Server database tasks. He also provides customised training in one-on-one or group sessions either online or at your premises by the hour or by the day. </p>
 
