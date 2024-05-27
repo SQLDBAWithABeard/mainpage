@@ -35,7 +35,7 @@
   i18n: nav.calendly
   name: Meet
   tpl: calendly.html
-  css: project
+  css: testimonials navy-section
 
 - id: contact
   i18n: nav.link
