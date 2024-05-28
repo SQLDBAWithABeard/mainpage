@@ -22,6 +22,7 @@ author:  # change following line to your infomation.
   email: rob@sewells-consulting.co.uk  # Leave blank if you don't have now
   cv:   # An online CV can be printed as PDF, leave blank if you don't have now
   mvp: 5002693 # mvp profile id
+  calendly: rob-nqvb # calendly link id
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
     - name: icon-apache
