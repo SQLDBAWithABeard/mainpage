@@ -43,26 +43,9 @@ Here is a [document](https://jarrekk.github.io/Jalpc/html/2017/01/31/3-steps-to-
 
 # Features
 
-## Index page
+## Legacy multi-section landing (Removed)
 
-The index page is seprated into several sections and they are located in `_includes/sections`,the configuration is in `_data/landing.yml` and section's detail configuration is in `_data/*.yml`.
-
-### `_data/*.yml`
-
-These files are used to dynamically render pages, so you almost don't have to edit *html files* to change your own theme, besides you can use `jekyll serve --watch` to reload changes.
-
-The following is mapping between *yml files* to *sections*.
-
-* landing.yml ==> index.html
-* index/language.yml ==> index.html
-* index/careers.yml  ==>  _includes/sections/career.html
-* index/skills.yml  ==>  _includes/sections/skills.html
-* index/projects.yml  ==>  _includes/sections/projects.html
-* index/links.yml  ==>  _includes/sections/links.html
-
-This *yml file* is about blog page navbar
-
-* blog.yml ==> _includes/header.html
+The original Jalpc multi-section landing (driven by `_data/landing.yml` and `_includes/sections/*`) has been removed in favor of a minimalist single-page home (`layout: home`). Those files are no longer present. If you need them back, recover from git history.
 
 The following is mapping between *yml files* to *donation*
 
@@ -70,9 +53,9 @@ The following is mapping between *yml files* to *donation*
 * donation/alipay.yml  ==>  blog/donate.html
 * donation/wechat_pay.yml ==> blog/donate.yml
 
-## Chart Skills
+## (Removed) Chart Skills Section
 
-I use [Chart.js](http://www.chartjs.org/) to show skills, the type of skills' chart is radar, if you want to custom, please read document of Chart.js and edit **_includes/sections/skills.html** and **_data/index/skills.yml**.
+The radar skills chart and associated data files were part of the legacy landing and are no longer rendered.
 
 ## Categories in blog page
 
