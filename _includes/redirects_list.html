@@ -1,0 +1,29 @@
+{% comment %}
+  Builds a list of pages using layout: redirected.
+  Safe for GitHub Pages: pure Liquid, no plugins.
+{% endcomment %}
+{% assign redirect_pages = site.pages | where: 'layout','redirected' %}
+{% unless redirect_pages and redirect_pages.size > 0 %}
+  <p style="text-align:center; color: var(--text-2);">No short links defined yet.</p>
+{% else %}
+  {% assign redirect_pages = redirect_pages | sort: 'url' %}
+  <div class="redirects" data-count="{{ redirect_pages.size }}">
+    <table aria-describedby="redirects-caption">
+      <caption id="redirects-caption" class="small" style="text-align:left; padding:.25rem 0 .75rem;">Auto-generated from redirect pages.</caption>
+      <thead>
+  <tr><th scope="col">Short Path</th><th scope="col">Destination Host</th></tr>
+      </thead>
+      <tbody>
+      {% for p in redirect_pages %}
+        {% assign dest = p.redirect_to %}
+        {% assign host = dest | replace: 'https://','' | replace: 'http://','' %}
+        {% assign host = host | split: '/' | first %}
+        <tr>
+          <td><code>{{ p.url }}</code></td>
+          <td><a href="{{ dest }}" rel="noopener noreferrer">{{ host }}</a></td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endunless %}

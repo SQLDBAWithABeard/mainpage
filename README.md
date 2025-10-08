@@ -257,3 +257,110 @@ If this project let you enjoy your blog time, you can give me a cup of coffee :)
 # Ad
 [Jalpc-A](https://github.com/Jack614/Jalpc-A): another Jekyll theme written by [AngularJS](https://angularjs.org/).
 
+---
+
+## Modern Home Page (Customized)
+
+This fork has been updated with a minimalist single-page home experience (layout: `home`).
+
+### Data-driven Content
+
+Edit hero text in `_data/hero.yml`:
+
+```
+headline: "Rob Sewell"
+subheading: "Automation Consultant – Sewells Consulting Limited"
+primary_cta:
+  label: "Visit the Blog"
+  url: "https://blog.robsewell.com"
+secondary_cta:
+  label: "Book a Meeting"
+  url: "https://calendly.com/rob-sewell"
+```
+
+Edit contact / link targets in `_data/contact.yml`:
+
+```
+linkedin: robmsewell
+github: SQLDbaWithABeard
+bluesky: robsewell.com
+email_display: rob@sewells-consulting.co.uk
+mvp_id: 5002693
+calendly: rob-sewell
+rss: /feed.xml
+blog_url: https://blog.robsewell.com
+```
+
+### Adding / Managing Short Links
+
+Short links use the existing `redirected` layout. Create a file at the project root (or any subfolder) with front matter:
+
+```
+---
+layout: redirected
+redirect_to: https://target.example.com/some/path
+permalink: /alias
+---
+```
+
+The home page automatically lists all such redirects in the **Short Links** section. No plugin required; it enumerates `site.pages` where `layout: redirected`.
+
+### Theming & Dark Mode
+
+The `home` layout auto-detects system dark/light. A toggle cycles `auto → light → dark → …` and stores preference in `localStorage`.
+
+To tweak colors, adjust CSS variables near the top of `_layouts/home.html`.
+
+### Email Display & Copy
+
+Email text is rendered without a direct `mailto:` to reduce scraping. A copy button is progressively enhanced with JavaScript.
+
+### Structured Data
+
+The layout embeds JSON-LD `Person` schema to improve search engine visibility. Update fields in `_config.yml` and the contact data if needed.
+
+### Future: Redirect Validation (Optional)
+
+You can add a GitHub Action to validate all `redirect_to` targets (e.g. using curl + a small script). Example workflow stub (not yet committed):
+
+```yaml
+name: Validate Redirects
+on: [push, workflow_dispatch]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: List redirect pages
+        run: |
+          grep -rl "layout: redirected" . > redirects.txt || true
+          echo "Found $(wc -l < redirects.txt) redirect pages"
+      - name: Validate
+        run: |
+          set -e
+          while read file; do
+            url=$(awk '/redirect_to:/ {print $2}' "$file")
+            path=$(awk '/permalink:/ {print $2}' "$file" | tr -d '"')
+            if [ -z "$url" ]; then echo "Missing redirect_to in $file"; exit 1; fi
+            code=$(curl -I -o /dev/null -w '%{http_code}' -L --max-time 15 "$url" || echo ERR)
+            echo "$path -> $url : $code"
+            if [ "$code" = "404" ] || [ "$code" = "000" ] || [ "$code" = "ERR" ]; then
+              echo "Broken redirect: $path ($url)"; exit 1;
+            fi
+          done < redirects.txt
+```
+
+---
+
+## Maintenance Summary
+
+| Task | File(s) |
+|------|---------|
+| Update hero text | `_data/hero.yml` |
+| Update contact links | `_data/contact.yml` |
+| Add redirect | New file with `layout: redirected` |
+| Tweak colors/layout | `_layouts/home.html` |
+| Update avatar | `_config.yml` (`author.avatar`) |
+
+---
+

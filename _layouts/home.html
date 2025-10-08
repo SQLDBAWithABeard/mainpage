@@ -1,0 +1,172 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="keywords" content="{{ site.keywords }}" />
+    <link rel="icon" href="{{ '/static/assets/img/favicon.ico' | relative_url }}" />
+    <meta name="color-scheme" content="light dark" />
+    <style>
+      :root {
+        --font-stack: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+        --accent: #2f6fab;
+        --radius: 10px;
+        --transition: 120ms ease;
+        --space: clamp(0.75rem, 1.2vw, 1.25rem);
+        --shade-0: #ffffff;
+        --shade-1: #f5f7fa;
+        --shade-2: #e5eaf0;
+        --shade-3: #d0d7df;
+        --shade-9: #0c1116;
+        --text-1: #1d242b;
+        --text-2: #4b5a68;
+        --shadow: 0 1px 2px rgba(0,0,0,.06),0 4px 12px -2px rgba(0,0,0,.08);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root[data-theme="auto"],:root[data-theme="dark"] {
+          --shade-0: #0e1116;
+          --shade-1: #161b22;
+          --shade-2: #1f2630;
+          --shade-3: #29323d;
+          --shade-9: #f5f7fa;
+          --text-1: #eef2f6;
+          --text-2: #b5c0cc;
+          --shadow: 0 2px 4px rgba(0,0,0,.6),0 8px 28px -4px rgba(0,0,0,.55);
+        }
+      }
+      :root[data-theme="light"] { color-scheme: light; }
+      :root[data-theme="dark"] { color-scheme: dark; }
+      * { box-sizing: border-box; }
+      body { margin:0; font-family: var(--font-stack); background: var(--shade-1); color: var(--text-1); -webkit-font-smoothing: antialiased; }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover,a:focus { text-decoration: underline; }
+      header.hero { min-height: 62vh; display:flex; align-items:center; justify-content:center; padding: calc(var(--space)*3) var(--space) var(--space); text-align:center; }
+      .hero-inner { max-width: 880px; margin:0 auto; }
+      h1 { font-size: clamp(2.5rem,6vw,3.75rem); line-height:1.05; margin:0 0 var(--space); letter-spacing:-.02em; }
+      h2.sub { font-size: clamp(1.1rem,2.2vw,1.75rem); font-weight:500; margin:0 0 calc(var(--space)*1.5); color: var(--text-2); }
+      p.bio { font-size: clamp(1rem,1.2vw,1.15rem); line-height:1.55; margin: 0 auto calc(var(--space)*2); max-width: 60ch; }
+      .actions { display:flex; flex-wrap:wrap; gap: .75rem; justify-content:center; margin-bottom: calc(var(--space)*2); }
+      .btn { --btn-bg: var(--accent); --btn-fg: #fff; font-size: 0.95rem; letter-spacing:.25px; padding: .85rem 1.35rem; border-radius: var(--radius); display:inline-flex; align-items:center; gap:.5rem; font-weight:600; background: var(--btn-bg); color: var(--btn-fg); border:1px solid var(--btn-bg); box-shadow: var(--shadow); transition: var(--transition); }
+      .btn.outline { --btn-bg: transparent; --btn-fg: var(--accent); color: var(--accent); background: transparent; border:1px solid var(--accent); box-shadow:none; }
+      .btn:hover,.btn:focus { filter: brightness(1.08); text-decoration:none; transform: translateY(-2px); }
+      .btn:active { transform: translateY(0); }
+      section { padding: calc(var(--space)*3) var(--space) calc(var(--space)*4); }
+      section.compact { padding-top: calc(var(--space)*2); }
+      .contact-grid { --min: 140px; display:grid; grid-template-columns: repeat(auto-fit,minmax(var(--min),1fr)); gap: 1rem; max-width: 1000px; margin:0 auto; }
+      .card { background: var(--shade-0); padding: 1.1rem 1rem 1rem; border-radius: var(--radius); position:relative; box-shadow: var(--shadow); display:flex; flex-direction:column; justify-content:center; align-items:center; gap:.65rem; text-align:center; transition: var(--transition); }
+      .card:hover { transform: translateY(-4px); }
+      .icon { width:40px; height:40px; display:inline-flex; align-items:center; justify-content:center; color: var(--accent); }
+      .icon svg { width:100%; height:100%; }
+      .small { font-size:.8rem; color: var(--text-2); }
+      .email-display { font-variant-ligatures:none; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+      .redirects { max-width: 1040px; margin: 0 auto; }
+      .redirects table { width:100%; border-collapse: collapse; font-size:.9rem; }
+      .redirects th, .redirects td { padding: .55rem .6rem; text-align:left; }
+      .redirects tbody tr { background: var(--shade-0); box-shadow: var(--shadow); }
+      .redirects tbody tr+tr { margin-top:.5rem; }
+      .redirects a { word-break: break-all; }
+      .redirects thead { position:sticky; top:0; background: var(--shade-2); }
+      .fade-sep { width:100%; height:1px; background: linear-gradient(90deg,transparent,var(--shade-3),transparent); margin: calc(var(--space)*3) 0 calc(var(--space)*1.5); }
+      footer { padding: 2rem var(--space) 4rem; text-align:center; font-size:.8rem; color: var(--text-2); }
+      .theme-toggle { position:fixed; top:.75rem; right:.75rem; z-index:20; background: var(--shade-0); border:1px solid var(--shade-2); border-radius: 50%; width:44px; height:44px; display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow: var(--shadow); }
+      .theme-toggle:focus { outline:2px solid var(--accent); outline-offset:2px; }
+      @media (max-width:680px){ .hero-inner{padding-top:1rem;} header.hero{min-height:55vh;} }
+      @media (prefers-reduced-motion: reduce){ *,*::before,*::after{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition:none !important;} }
+    </style>
+    <script>
+      // theme toggle
+      (function(){
+        const root = document.documentElement;
+        const pref = localStorage.getItem('theme-pref');
+        if(pref){ root.dataset.theme = pref; }
+        window.toggleTheme = function(){
+          const cur = root.dataset.theme;
+            if(cur==='dark'){ root.dataset.theme='light'; localStorage.setItem('theme-pref','light'); }
+            else if(cur==='light'){ root.dataset.theme='dark'; localStorage.setItem('theme-pref','dark'); }
+            else { // auto -> force dark
+              const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches; root.dataset.theme = isDark?'light':'dark'; localStorage.setItem('theme-pref', root.dataset.theme);
+            }
+          renderThemeToggle();
+        }
+        window.renderThemeToggle = function(){
+          const cur = root.dataset.theme || 'auto';
+          const el = document.getElementById('theme-toggle-icon');
+          if(!el) return;
+          const map = { auto:'◎', light:'☀️', dark:'🌙' };
+          el.textContent = map[cur] || '◎';
+          el.setAttribute('aria-label', 'Theme: '+cur+'. Activate to cycle');
+        }
+        document.addEventListener('DOMContentLoaded', renderThemeToggle);
+      })();
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.author.name | escape }}",
+      "url": "{{ site.url }}",
+      "jobTitle": "Automation Consultant",
+      "sameAs": [
+        "https://www.linkedin.com/in/{{ site.author.linkedin_id }}",
+        "https://github.com/{{ site.author.github_username }}",
+        "https://bsky.app/profile/{{ site.author.bluesky_username }}",
+        "https://mvp.microsoft.com/en-us/PublicProfile/{{ site.author.mvp }}"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <button class="theme-toggle" onclick="toggleTheme()"><span id="theme-toggle-icon" aria-live="polite">◎</span></button>
+    <header class="hero" id="top">
+      <div class="hero-inner">
+        {% assign hero = site.data.hero %}
+        <h1>{{ hero.headline }}</h1>
+        <h2 class="sub">{{ hero.subheading }}</h2>
+        <div class="actions">
+          {% if hero.primary_cta %}<a class="btn" href="{{ hero.primary_cta.url }}">{{ hero.primary_cta.label }}</a>{% endif %}
+          {% if hero.secondary_cta %}<a class="btn outline" href="{{ hero.secondary_cta.url }}">{{ hero.secondary_cta.label }}</a>{% endif %}
+        </div>
+        <p class="bio">{{ site.author.desc | strip_html | truncate: 500 }}</p>
+        <p class="small"><a href="#contact">Jump to contact & links ↓</a></p>
+      </div>
+    </header>
+    <div class="fade-sep" aria-hidden="true"></div>
+    <main id="content" class="content">
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title" style="text-align:center; font-size:clamp(1.8rem,3vw,2.4rem); margin-top:0;">Contact & Links</h2>
+        {% include contact_icons.html %}
+      </section>
+      <div class="fade-sep" aria-hidden="true"></div>
+      <section id="redirects" aria-labelledby="redirects-title" class="compact">
+        <h2 id="redirects-title" style="text-align:center; font-size:clamp(1.6rem,2.7vw,2.1rem); margin:0 0 1.2rem;">Short Links</h2>
+        {% include redirects_list.html %}
+      </section>
+    </main>
+    <footer>
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }} • <a href="#top">Back to top</a></p>
+    </footer>
+    <script>
+      // email reveal & copy
+      (function(){
+        const el = document.querySelector('[data-email-user]');
+        if(!el) return;
+        const user = el.getAttribute('data-email-user');
+        const domain = el.getAttribute('data-email-domain');
+        el.textContent = user + '@' + domain;
+        const btn = document.getElementById('copy-email');
+        if(btn){
+          btn.addEventListener('click', ()=>{
+            navigator.clipboard.writeText(user + '@' + domain).then(()=>{
+              btn.textContent='Copied'; setTimeout(()=>btn.textContent='Copy',1600);
+            });
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
