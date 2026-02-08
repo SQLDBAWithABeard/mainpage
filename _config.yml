@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: Rob Sewell 
+title: Rob Sewell
 description: Data Platform MVP and Cloud Data Center Management MVP
 keywords: Rob Sewell, SQLDbaWithABeard, SQL DBA With A Beard, PowerShell, Azure, Automation, DevOps, Data
 baseurl: / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
@@ -31,17 +31,10 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-linux
     - name: icon-apache
-  desc: "<p>Rob is a Data Infrastructure as Code Automation Engineer and Trainer.</p>
-
-<p>Rob is a Data Platform MVP and an Azure MVP. <a href=\"https://mvp.microsoft.com/en-us/PublicProfile/5002693\">Link</a>
-
-<p>Rob works with clients to enable automation, SQL Server best practices and Continuous Delivery using PowerShell, Git, Azure DevOps, Jenkins, Octopus Deploy mainly on the Microsoft Azure platform or on-premises. Rob also enables automation of SQL Server database tasks. He also provides customised training in one-on-one or group sessions either online or at your premises by the hour or by the day. </p>
-
-<p>If you would like to hire me please get in touch either via one of the links above or by requesting a meeting via <a href=\"https://calendly.com/rob-sewell\">this link</a>
-"
+  desc: "I help global organisations modernise their data and cloud platforms by combining deep Microsoft Fabric expertise with hands‑on engineering, automation, and governance leadership. My work spans strategy through implementation — from designing secure, multi‑region Fabric deployments to leading teams building self‑service Azure platforms using Azure DevOps, Bicep, and automation‑first principles. I partner closely with business, engineering, and security leaders to ensure solutions are robust, compliant, and aligned with organisational risk posture.I’ve delivered production‑grade platforms across public and private sectors, including global Fabric rollouts with strong governance, enterprise IaC frameworks enabling consistent Azure deployments, SQL Server performance and automation work, and PowerShell tooling adopted by engineering teams. I thrive at the intersection of engineering excellence, operational governance, and clear communication — translating complex technical requirements into actionable plans for executives, security teams, and hands‑on engineers.<p>If you would like to hire me please get in touch either via one of the links above or by requesting a meeting via <a href=\"https://calendly.com/rob-sewell\">this link</a>"
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
-  name: 
+  name:
 
 # analytics
 ## google analytics
