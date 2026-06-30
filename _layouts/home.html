@@ -131,7 +131,7 @@ layout: compress
           {% if hero.primary_cta %}<a class="btn" href="{{ hero.primary_cta.url }}">{{ hero.primary_cta.label }}</a>{% endif %}
           {% if hero.secondary_cta %}<a class="btn outline" href="{{ hero.secondary_cta.url }}">{{ hero.secondary_cta.label }}</a>{% endif %}
         </div>
-        <p class="bio">{{ site.author.desc | strip_html | truncate: 500 }}</p>
+        <p class="bio">{{ site.author.desc | strip_html | split: "." | first | append: "." }}</p>
         <p class="small"><a href="#contact">Jump to contact & links ↓</a></p>
       </div>
     </header>
